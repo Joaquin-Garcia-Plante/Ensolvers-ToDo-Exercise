@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap");
+body {
+  min-height: 100vh;
+  word-wrap: break-word;
+  background-image: linear-gradient(180deg, #ffc0a9 0, #ffb5a6 16.67%, #ffa9a2 33.33%, #f29d9d 50%, #de9297 66.67%, #cc8891 83.33%, #bb7f8b 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: inherit;
+}
+
+/* #root {
+} */
+
+.icon {
+  color: white;
+}
+
+@layer base {
+  body {
+    @apply font-[Poppins];
+  }
+
+  li {
+    @apply p-4;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-bold;
+  }
+
+  h3 {
+    @apply text-xl font-bold;
+  }
+
+  .icon {
+    @apply text-2xl cursor-pointer;
+  }
+  .button {
+    @apply p-3 border bg-gradient-to-r from-[var(--primary-ligth)] text-white rounded-md;
+  }
+}
